@@ -1,0 +1,28 @@
+<h2>Listing Players</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Score</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for players <- @players do %>
+    <tr>
+      <td><%= players.username %></td>
+      <td><%= players.score %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: players_path(@conn, :show, players), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: players_path(@conn, :edit, players), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: players_path(@conn, :delete, players), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Players", to: players_path(@conn, :new) %></span>
