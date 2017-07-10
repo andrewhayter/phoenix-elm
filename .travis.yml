@@ -1,5 +1,12 @@
 language: elixir
 elixir:
-  - 1.4.2
+- 1.4.2
 otp_release:
-  - 19.0
+- 19.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: UufJ2WMb2yA/UDZxib2DaQaIaKIIZY05X7AufT81OUm2Ww5j/NrQ2SLQTdt3nW4yN7+Xdvf1i/U/MTVm7PL3vVtFOr3XTo/ruwc1B2IO+PqaQRyvbzM1I2nRLMDxbElcq6S2c3lIuOGlP6fBiFpBrnF9fgw+7Ko/BOGzH2mNmMHMckL1T24iranSNApAqiS2fzoyBrENDAebCxe7gSlEFjI6coW4J+vCEBkYGx7O22wHrSVw8BTAFhs+FhgN9W2flZbemdoUdOv8hAKBxdLPoQyPj2ZuzRSrFY0Ix7bn8h9lAVoSRGeia5AurqjL+60r86KGHE6PM4yn6zU721L3Y9NO1r/yfrMjQOlpxEQTcHK+d3CK8fLeZRChWVW8y17vesTg6OKHj+p2P2mk4cb/5Lw8z5PuWQspzPfquwwd5M97O6YfGwMn4vQftR2Nr2sYYGvEHwoIfJoBGtXbUGxYnADJfM0YjUvuhPIY/63f6/rW0rdQoWFuFKg1vHm2pzuHGuNqtml3MkCb4kM7pNWVKhK8uYeTlhCplPwCQ3MdmJytJr9Vmeh9ZtPJsTA4g1o/EQJMsEv5yIl+NZvBjmU/6OH9MrN43YLLY+CpxFd0Bpxg9D81Pqf55EIZQT9dXUSYYHsmzjb+nBfRpxI0hFg/gaORLeBDTGiru5Rh/7KiRBM=
+  app: whispering-garden-34186
+  on:
+    repo: andrewhayter/phoenix-elm
