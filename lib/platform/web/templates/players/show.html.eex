@@ -3,6 +3,16 @@
 <ul>
 
   <li>
+    <strong>ID:</strong>
+    <%= @players.id %>
+  </li>
+
+  <li>
+    <strong>Display Name:</strong>
+    <%= @players.display_name %>
+  </li>
+
+  <li>
     <strong>Username:</strong>
     <%= @players.username %>
   </li>
