@@ -17,6 +17,7 @@ defmodule Platform.Web.PlayersController do
     case Accounts.create_players(players_params) do
       {:ok, players} ->
         conn
+        |> Platform.Web.PlayersAuthController.login(players)
         |> put_flash(:info, "Players created successfully.")
         |> redirect(to: players_path(conn, :show, players))
       {:error, %Ecto.Changeset{} = changeset} ->
