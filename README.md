@@ -1,6 +1,9 @@
 [![Build Status](https://travis-ci.org/andrewhayter/phoenix-elm.svg?branch=master)](https://travis-ci.org/andrewhayter/phoenix-elm)
 
-Example app of elixir/phoenix using elm on the frontend. WIP.
+Example app of [elixir](https://elixir-lang.org/)/[phoenix](http://www.phoenixframework.org/) using [elm](http://elm-lang.org/) on the frontend, running tests with [Travis CI](https://travis-ci.org/andrewhayter/phoenix-elm) and deploying to [heroku dyno](https://whispering-garden-34186.herokuapp.com/) on successful passing. Work In Progress, learning exercise.
+
+[Demo](https://whispering-garden-34186.herokuapp.com/)
+
 
 # Platform
 
